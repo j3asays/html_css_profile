@@ -1,3 +1,21 @@
-h1{
-    background-color: green;
-}
+.container {
+    height: 100vh;  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Navbar Navbar Navbar Navbar Navbar Navbar"
+      ". profile-pic prof-info prof-info prof-info ."
+      ". posts posts posts posts .";
+  }
+  
+  .Navbar { grid-area: Navbar; }
+  
+  .prof-info { grid-area: prof-info; }
+  
+  .profile-pic { grid-area: profile-pic; }
+  
+  .posts { grid-area: posts; }
+  
