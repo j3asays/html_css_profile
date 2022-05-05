@@ -32,7 +32,7 @@
   
   .navbar { 
       grid-area: navbar; 
-      background-color: rgb(16, 17, 19);
+      background-color: rgb(25, 25, 26);
       display: flex;
       justify-content: space-evenly;
       align-items: center;
