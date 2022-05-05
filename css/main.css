@@ -2,20 +2,94 @@
     height: 100vh;  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 1.5fr 1fr;
+    grid-template-rows: 10vh 2fr 3fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "Navbar Navbar Navbar Navbar Navbar Navbar"
-      ". profile-pic prof-info prof-info prof-info ."
+      "navbar navbar navbar navbar navbar navbar"
+      ". prof-pic prof-info prof-info prof-info ."
       ". posts posts posts posts .";
   }
   
-  .Navbar { grid-area: Navbar; }
+  .prof-info { 
+      grid-area: prof-info; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 0 5vw;
+      font-style: italic;
+    
+    }
   
-  .prof-info { grid-area: prof-info; }
+  .prof-info > h1 {
+      align-self: center;
+
+  }
+  .posts { 
+      grid-area: posts; 
+    }
   
-  .profile-pic { grid-area: profile-pic; }
+  .navbar { 
+      grid-area: navbar; 
+      background-color: rgb(16, 17, 19);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      position: sticky;
+      top: 0;
+   
+    }
   
-  .posts { grid-area: posts; }
-  
+  .navbar > a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+ 
+    }
+
+ .prof-pic { 
+        grid-area: prof-pic; 
+        border: 5px solid #555;
+          
+     
+    }
+
+    #profilePic {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .post-card{
+        border: solid rgb(155, 165, 165);
+        padding: 1vh;
+        margin: 1vh 0;
+    
+    }
+
+    .card-title{
+        margin: 10px 0;
+
+    }
+
+    .card-links{
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .card-links > a{
+        text-decoration: none;
+
+    }
+
+    .card-links > a:hover{
+        text-decoration: underline;
+
+    }
+
+
+    body {
+        background-image: url("https://images.pexels.com/photos/8408542/pexels-photo-8408542.jpeg?cs=srgb&dl=pexels-sarah-dorweiler-8408542.jpg&fm=jpg");
+        background-size: cover;
+    }
